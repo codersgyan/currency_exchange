@@ -2,7 +2,7 @@
 
 ## Deployment guide
 
-Step 1 : 
+#### Step 1 : 
 
 Clone the project in the directory where all your sites lives. here is the command to clone the project 
 
