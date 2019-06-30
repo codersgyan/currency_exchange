@@ -69,8 +69,6 @@ sudo chmod -R ug+rwx storage bootstrap/cache
 
 ```
 
-`Notice : Permissions can be different for diffent servers`
-
 
 #### Step 7 : 
 
