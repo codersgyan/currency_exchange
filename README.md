@@ -1,5 +1,7 @@
 # Currency Rate ( Demo Project ) 
 
+### Demo - [http://currency.truecodemedia.com ](http://currency.truecodemedia.com)
+
 ## Deployment guide
 
 #### Step 1 : 
@@ -15,6 +17,65 @@ Clone the project in the directory where all your sites lives. here is the comma
 
 `composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev`
 
-#### Step 3 : Create a database in mysql. 
+#### Step 3 : 
 
-#### Step 4 : rename .env.example to .env using following command 
+Create a database in mysql. 
+
+#### Step 4 : 
+
+rename .env.example to .env using following command. 
+
+`mv .env.example .env`  
+
+`php artisan key:generate`
+
+
+Change App url to your domain app url in `.env`
+
+```
+APP_URL=http://currency.truecodemedia.com
+```
+
+
+Put Database credentials in `.env`
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_name
+DB_USERNAME=db_username
+DB_PASSWORD=db_password
+```
+
+#### Step 5 : 
+
+Run database migration this will create all neccesary tables in the database
+
+`php artisan migrate --force`
+
+
+#### Step 6 : 
+Add neccesary permissions 
+
+```
+sudo chown -R www-data:www-data /path/to/project/directory
+sudo find /path/to/project/directory -type f -exec chmod 644 {} \; 
+sudo find /path/to/project/directory -type d -exec chmod 755 {} \;
+sudo chgrp -R www-data storage bootstrap/cache
+sudo chmod -R ug+rwx storage bootstrap/cache
+
+```
+
+`Notice : Permissions can be different for diffent servers`
+
+#### Step 7 : 
+
+Create a symlink between public and storage directory using following command 
+
+`php artisan storage:link`
+
+
+
+Thats it ! You can visit your domain url in the browser. 
+
