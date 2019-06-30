@@ -1,5 +1,7 @@
 # Currency Rate ( Demo Project ) 
 
+## Laravel + Vue Js
+
 ### Demo - [http://currency.truecodemedia.com ](http://currency.truecodemedia.com)
 
 ## Deployment guide
