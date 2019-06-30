@@ -24,8 +24,7 @@ class Kernel extends ConsoleKernel {
 	 */
 	protected function schedule(Schedule $schedule) {
 		$today = date('d/m/Y', strtotime(Carbon::now()));
-		// $schedule->command("exchange:fetch --date=$today")->dailyAt('01:00');
-		$schedule->command("exchange:fetch --date=$today")->everyFiveMinutes();
+		$schedule->command("exchange:fetch --date=$today")->dailyAt('01:00');
 	}
 
 	/**
