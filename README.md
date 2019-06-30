@@ -19,11 +19,8 @@ Clone the project in the directory where all your sites lives. here is the comma
 
 `composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev`
 
+
 #### Step 3 : 
-
-Create a database in mysql. 
-
-#### Step 4 : 
 
 rename .env.example to .env using following command. 
 
@@ -49,6 +46,11 @@ DB_DATABASE=db_name
 DB_USERNAME=db_username
 DB_PASSWORD=db_password
 ```
+
+#### Step 4 : 
+
+Create a database in mysql. 
+
 
 #### Step 5 : 
 
