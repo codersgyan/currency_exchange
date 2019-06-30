@@ -1,0 +1,51 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+        html, body {
+                background-color: whitesmoke;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .main{
+                background: url('/img/home_bg.jpg');
+                background-size: cover;
+                width:100%;
+                height:100vh;
+                background-attachment: fixed;
+                margin-top:-1.5rem!important;
+                .overlay{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.6);
+                }
+                section{
+                       position:relative;
+                        z-index:2;
+                        text-align:center;
+                        margin-top:100px;
+                        h1{
+                            color:#fff;
+                            font-size:4rem;
+                        }
+                        p{
+                            color:#a3a3a3;
+                            font-size: 1.2rem;
+                            margin-top: 30px;
+                        }
+                }
+            }
+            .overflow-hidden{
+                overflow-y: hidden;
+            }
