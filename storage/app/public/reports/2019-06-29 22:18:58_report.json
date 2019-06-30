@@ -1,0 +1,42 @@
+{
+    "@attributes": {
+        "ID": "R01035",
+        "DateRange1": "26.06.2019",
+        "DateRange2": "30.06.2019",
+        "name": "Foreign Currency Market Dynamic"
+    },
+    "Record": [
+        {
+            "@attributes": {
+                "Date": "26.06.2019",
+                "Id": "R01035"
+            },
+            "Nominal": "1",
+            "Value": "79,7980"
+        },
+        {
+            "@attributes": {
+                "Date": "27.06.2019",
+                "Id": "R01035"
+            },
+            "Nominal": "1",
+            "Value": "79,6346"
+        },
+        {
+            "@attributes": {
+                "Date": "28.06.2019",
+                "Id": "R01035"
+            },
+            "Nominal": "1",
+            "Value": "80,0107"
+        },
+        {
+            "@attributes": {
+                "Date": "29.06.2019",
+                "Id": "R01035"
+            },
+            "Nominal": "1",
+            "Value": "79,9105"
+        }
+    ]
+}
