@@ -74,7 +74,8 @@ sudo chmod -R ug+rwx storage bootstrap/cache
 
 Add the cron entry on the server to schedule tasks 
 
-`5 0 * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1 `
+`5 0 * * * php /path-to-your-project/artisan schedule:run >> /dev/null 2>&1`
+
 
 This Cron will call the Laravel command scheduler five minutes after midnight, every day. When the  `schedule:run` command is executed, Laravel will evaluate your scheduled tasks and runs the tasks that are due.
 
